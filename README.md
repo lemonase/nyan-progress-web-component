@@ -18,7 +18,7 @@ and declare the web component in your html.
 
 ## Preview
 
-![image_demo](./images/rough_demo.webm)
+![image_demo](./images/rough_demo.gif)
 
 ## Development
 
