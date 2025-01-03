@@ -16,6 +16,10 @@ and declare the web component in your html.
 </body>
 ```
 
+## Preview
+
+![image_demo](./images/rough_demo.webm)
+
 ## Development
 
 Install dependencies
@@ -27,6 +31,6 @@ npm i
 Run dev server
 
 ```shell
-npm run dev-serve
+npm run serve-dev
 ```
 
