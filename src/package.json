@@ -1,0 +1,17 @@
+{
+  "name": "nyan-progress-bar",
+  "version": "0.0.1",
+  "description": "Nyan cat progress bar as a web component.",
+  "license": "MIT",
+  "author": "https://github.com/lemonase",
+  "type": "commonjs",
+  "main": "index.js",
+  "module": "index.js",
+  "scripts": {
+    "serve-dev": "wds --node-resolve --open --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@web/dev-server": "^0.4.6"
+  }
+}

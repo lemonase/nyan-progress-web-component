@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nyan World</title>
+    <script src="index.js"></script>
+    <script>
+        // testing value changes with scrollwheel
+        window.addEventListener('wheel', function(event) {
+            let nyanComp = document.querySelector('nyan-progress-bar');
+            let progressInt = parseInt(nyanComp.getAttribute('value'));
+
+            if (event.deltaY < 0) {
+                ++progressInt;
+            }
+            else if (event.deltaY > 0) {
+                --progressInt;
+            }
+            nyanComp.setAttribute('value', progressInt + "%");
+        });
+    </script>
+</head>
+<body>
+    <!-- nyan cat -->
+    <nyan-progress-bar value="5%"></nyan-progress-bar>
+    <button id="start">Start Nyan</button>
+</body>
+</html>
+
+<script>
+    // testing value changes with setInterval
+    document.querySelector('#start').addEventListener("click", () => {
+        setInterval(() => {
+            let nyanComp = document.querySelector('nyan-progress-bar');
+            let progressInt = parseInt(nyanComp.getAttribute('value'));
+            if (progressInt > 0 && progressInt < 100) {
+                nyanComp.setAttribute('value', ++progressInt + "%");
+            }
+        }, 50);
+    });
+</script>
